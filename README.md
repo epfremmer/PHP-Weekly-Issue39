@@ -51,7 +51,7 @@
 ### app:convert:scientific:to:decimal
 
     Usage:
-      app:convert:scientific:to:decimal <number>
+      app:convert:scientific:to:decimal -- <number>
     
     Arguments:
       number                Scientific value to convert
@@ -71,7 +71,7 @@
 ### app:convert:number:to:shortest
 
     Usage:
-      app:convert:number:to:shortest <number>
+      app:convert:number:to:shortest -- <number>
     
     Arguments:
       number                Numeric value to convert
