@@ -1,0 +1,31 @@
+services:
+  app.filter.whitespace:
+    class: PHPWeekly\Issue39\Filter\WhiteSpaceFilter
+
+  app.factory.integer:
+    class: PHPWeekly\Issue39\Factory\IntegerFactory
+
+  app.factory.decimal:
+    class: PHPWeekly\Issue39\Factory\DecimalFactory
+
+  app.factory.number:
+    class: PHPWeekly\Issue39\Factory\NumberFactory
+    arguments:
+      - @app.factory.integer
+      - @app.factory.decimal
+
+  app.factory.scientific_notation:
+    class: PHPWeekly\Issue39\Factory\ScientificNotationFactory
+    arguments:
+      - @app.factory.number
+      - @app.factory.integer
+
+  app.transformer.decimal:
+    class: PHPWeekly\Issue39\Transformer\DecimalFormatTransformer
+    arguments:
+      - @app.factory.number
+
+  app.transformer.scientific_notation:
+    class: PHPWeekly\Issue39\Transformer\ScientificNotationTransformer
+    arguments:
+      - @app.factory.scientific_notation

@@ -1,0 +1,10 @@
+default:
+    suites:
+        default:
+            paths:
+                - %paths.base%/tests/features
+            contexts:
+                - PHPWeekly\Issue39\Tests\Context\FeatureContext: ~
+                - PHPWeekly\Issue39\Tests\Context\CommandContext: ~
+    testers:
+        rerun_cache: .behat_rerun_cache

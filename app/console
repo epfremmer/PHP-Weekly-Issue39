@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * File console
+ *
+ * @author Edward Pfremmer <epfremme@nerdery.com>
+ */
+
+use PHPWeekly\Issue39\Application;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$application = new Application();
+$application->run();
