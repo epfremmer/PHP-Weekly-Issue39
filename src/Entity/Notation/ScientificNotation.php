@@ -7,7 +7,6 @@
 namespace PHPWeekly\Issue39\Entity\Notation;
 
 use PHPWeekly\Issue39\Entity\Numeric as Entity;
-use PHPWeekly\Issue39\Entity\SignableInterface;
 
 /**
  * Class ScientificNotation

@@ -1,4 +1,4 @@
-# Challenge 036: Pronouncing Hex
+# Challenge 039: Efficient Scientific Notation
 
 ## Install
 
