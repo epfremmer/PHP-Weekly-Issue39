@@ -21,8 +21,6 @@ use Symfony\Component\Console\Tester\CommandTester;
  */
 class CommandContext implements Context, SnippetAcceptingContext
 {
-    //use CodeCoverageTrait;
-
     /**
      * @var array
      */

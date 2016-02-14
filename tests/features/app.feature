@@ -1,4 +1,4 @@
-Feature: Default Craft Install
+Feature: Application exists
 
   Scenario: Application entry point exists
     Given I am in the "." path

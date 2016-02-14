@@ -22,20 +22,16 @@ class CodeCoverage
      * @var \PHP_CodeCoverage_Report_HTML
      */
     private $writer;
-    private $context;
 
     /**
      * CodeCoverage constructor
-     *
-     * @param string $context - Context class name
      */
-    public function __construct($context)
+    public function __construct()
     {
         $filter = new \PHP_CodeCoverage_Filter();
         $filter->addDirectoryToWhitelist(__DIR__ . '/../app');
         $filter->addDirectoryToWhitelist(__DIR__ . '/../src');
 
-        $this->context = $context;
         $this->coverage = new \PHP_CodeCoverage(null, $filter);
         $this->writer = new \PHP_CodeCoverage_Report_PHP();
     }
